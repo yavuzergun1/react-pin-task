@@ -9,7 +9,7 @@ interface Props {
   pinValues: (number | undefined)[];
   setPinValues: (values: (number | undefined)[]) => void;
   color?: string;
-  size: any;
+  size: number;
 }
 
 const Pin = ({ pinValues, setPinValues, color = "#000", size }: Props) => {
