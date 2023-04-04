@@ -35,7 +35,6 @@ export const StyledPinInput = styled.input<StyledPinInputProps>`
 `;
 
 export const StyledContainer = styled.div<{ $size: number }>`
-  position: absolute;
   display: grid;
   box-sizing: border-box;
   width: 80%;
@@ -44,4 +43,11 @@ export const StyledContainer = styled.div<{ $size: number }>`
   grid-template-rows: 1fr;
   grid-column-gap: 4%;
   align-items: center;
+`;
+
+export const InputContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 `;

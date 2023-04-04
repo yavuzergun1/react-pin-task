@@ -21,7 +21,6 @@ const Pin = ({ pinValues, setPinValues, color = "#000", size }: Props) => {
     const next = inputsRef.current[id];
     if (next) {
       next.focus();
-      /* iOS bug */
       next.click();
     }
   };
