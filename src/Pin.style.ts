@@ -25,9 +25,9 @@ export const StyledPinInput = styled.input<StyledPinInputProps>`
     margin: 0;
   }
 
-  &[type="number"] {
+  /* &[type="number"] {
     -moz-appearance: textfield;
-  }
+  } */
 
   :focus {
     outline: none;

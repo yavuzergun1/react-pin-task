@@ -8,8 +8,7 @@ import { InputContainer } from "./Pin.style";
 export default function App() {
   const [pinValues, setPinValues] = useState<(number | undefined)[]>([]);
   const [length, setLength] = useState(10);
-  console.log("pin",pinValues.length);
-  console.log(length);
+
 
   if (pinValues.length == length) {
    alert("pin is full please refresh the page")
