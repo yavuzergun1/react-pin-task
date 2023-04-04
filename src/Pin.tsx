@@ -9,7 +9,7 @@ interface Props {
   pinValues: (number | undefined)[];
   setPinValues: (values: (number | undefined)[]) => void;
   color?: string;
-
+  size: number;
 }
 
 const Pin = ({ pinValues, setPinValues, color = "#000", size }: Props) => {
@@ -74,10 +74,10 @@ const Pin = ({ pinValues, setPinValues, color = "#000", size }: Props) => {
     <StyledPinInput
       type="number"
       value={pinValues[id]}
-      ref={(el:any) => {
+      ref={(el: any) => {
         if (el) inputsRef.current[id] = el;
       }}
-      onKeyUp={(e:any) => onInputChange(e, id)}
+      onKeyUp={(e: any) => onInputChange(e, id)}
       onChange={() => setFocusPosition(id)}
       onFocus={() => setFocusPosition(id)}
       autoComplete="chrome-off"
@@ -90,7 +90,7 @@ const Pin = ({ pinValues, setPinValues, color = "#000", size }: Props) => {
   );
 
   return (
-    <StyledContainer $size={size}>
+    <StyledContainer $size ={size}>
       {[...Array(size)].map((_, index) => (
         <div key={index}>
           <NumberInput id={index} />
